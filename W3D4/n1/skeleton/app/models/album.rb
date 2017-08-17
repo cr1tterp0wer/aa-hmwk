@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: albums
+#
+#  id         :integer          not null, primary key
+#  title      :string           not null
+#  artist_id  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_albums_on_artist_id  (artist_id)
+#
+
+class Album < ApplicationRecord
+  belongs_to :artist,
+    class_name: 'Artist',
+    foreign_key: :artist_id,
+    primary_key: :id
+
+  has_many :tracks,
+    class_name: 'Track',
+    foreign_key: :album_id,
+    primary_key: :id
+end
