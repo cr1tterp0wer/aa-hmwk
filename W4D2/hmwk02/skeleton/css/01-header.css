@@ -1,0 +1,76 @@
+/*Colors
+
+Black: #000
+White: #fff
+Dark Gray: #aaa
+Gray: #ccc
+Light Gray: #eee
+Red: #f00
+Type
+
+Font Family: sans-serif
+Font Weights: 400, 700
+Font Sizes: 24px, 16px, 14px
+Borders
+
+Thickness: 1px
+Layout
+
+Whitespace: 5px, 10px, 20px
+Total Size Container: 900px
+Total Size Sidebar: 240px
+Total Size Content: 660px*/
+
+/* PHASE 1: Header */
+
+body {
+  /* Write your css here... */
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight:400;
+}
+
+.black-txt{color: #000;}
+.white-txt{color: #fff;}
+.d-gray-txt{color: #aaa;}
+.gray-txt{color: #ccc;}
+.l-gray-txt{ color: #eee;}
+.red-txt{ color:#f00; }
+
+.black-back{background-color: #000;}
+.white-back{background-color: #fff;}
+.d-gray-back{background-color: #aaa;}
+.gray-back{background-color: #ccc;}
+.l-gray-back{background-color: #eee;}
+.red-back{background-color:#f00; }
+
+
+.lg-txt{font-size:24px;}
+.md-txt{font-size:16px;}
+
+.hv-txts{font-weight:700;}
+.md-txts{font-weight:400;}
+.header {
+  width:100%;
+  background:red;
+  border-bottom:1px solid #eee;
+  font-size:16px;
+  color:white;
+}
+
+.header a {
+    padding: 10px 20px;
+    display:block;
+}
+
+.header-nav {
+  margin:0 auto;
+  max-width:900px;
+  width:100%;
+  border-left:1px solid #eee;
+  border-right:1px solid #eee;
+}
