@@ -1,0 +1,92 @@
+/* PUT FLUID GRID CODE HERE */
+.col{
+  float:left;
+  padding:10px;
+  box-sizing:border-box;
+}
+
+.col:last-of-type{
+  padding:0;
+}
+
+.col-1-3{
+  width:33.33%;
+}
+.col-2-3{
+  width:66.66%;
+}
+
+.cf:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+
+#content{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+}
+
+nav#mobile{
+  display:none;
+  min-height:50px;
+}
+#hamburger{
+  display:none;
+  cursor:pointer;
+  height:65px;
+}
+ul.closed{
+  height:100%;
+  padding:50px 0 0 0;
+}
+ul.closed li{
+  display:block;
+}
+
+.closed{display:none;}
+
+@media (max-width:992px){
+
+  aside{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  aside ul{
+    text-align:left;
+    max-width:600px
+  }
+
+
+  nav#mobile{
+    display:block;
+    background: red;
+    color: white;
+  }
+  #hamburger{
+    display:block;
+    color:white;
+    filter: brightness(0) invert(1);
+
+    background-image:url('./hamburger.png');
+    background-position: 15px 7px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+  }
+  #hamburger:hover{
+    height:100%;
+  }
+  #hamburger:hover ul.closed{
+    display:block;
+  }
+  #logo,
+  nav#full-nav{
+    display:none;
+  }
+
+}
