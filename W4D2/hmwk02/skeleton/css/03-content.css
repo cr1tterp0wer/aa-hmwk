@@ -1,21 +1,35 @@
 /* PHASE 3: Content */
-
+body{
+  background:#eee;
+}
 .content {
-
+  background:#fff;
+  max-width:900px;
+  width:100%;
+  margin:0 auto;
+  border:1px solid #ccc;
 }
 
 .content-sidebar {
-
+  width:240px;
+  float:left;
+  padding:20px;
+  box-sizing: border-box;
 }
 
 .content-main {
-
+width:660px;
+float:left;
+padding:20px;
+box-sizing: border-box;
 }
 
 .content h1 {
-
+  font-size:24px;
+  font-weight:700;
+  margin:0 0 20px 0;
 }
 
 .content p {
-
+  font-size:16px;
 }

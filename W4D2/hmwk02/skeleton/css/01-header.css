@@ -65,6 +65,7 @@ body {
 .header a {
     padding: 10px 20px;
     display:block;
+    font-weight:700;
 }
 
 .header-nav {
